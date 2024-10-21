@@ -1,0 +1,19 @@
+:root {
+    --cor-letras: #FFF;
+    --cor-hover-letra: #eb2b51;
+    --cor-fundo: #000000;
+    --cor-cinza-escuro:#161616;
+    --fonte: "Alegreya Sans SC", sans-serif;
+}
+
+/* Variavel de Cor*/
+.text-light-000{ color: var(--cor-letras);}
+
+/* Variavel de Margem */
+.mt-7{margin-top: 7rem;}
+.mt-10{margin-top: 10rem;}
+.mt-13{margin-top: 13rem;}
+.mb-8{margin-bottom: 5rem;}
+
+/* Variavel Tamanho de Letra */
+.fs-10{font-size: 3rem;}

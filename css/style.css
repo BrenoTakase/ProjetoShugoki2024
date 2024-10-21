@@ -1,0 +1,276 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    list-style: none;
+    font-style: normal;
+    text-decoration: none;
+    color: var(--cor-letras);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CABECALHO */
+
+.cabecalho {
+    width: auto;
+    min-height: 50vh;
+    background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.3)),
+    url(../imagens/backgroundCyberVision.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/* MAIN */
+
+body{
+    background-color: var(--cor-fundo);
+}
+
+.cabecalho__Titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+}
+
+.margem {
+    margin: 0 5vw 10vh 5vw   ;
+}
+
+.main__Titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+    font-family: var(--fonte);
+}
+
+.main__TituloHardWare {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fonte);
+}
+
+.juntaMain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main__Robo {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 1.5vw;
+    gap: 2.5vw;
+    margin-bottom: 4vh;
+}
+
+.main__Robo2{
+    max-width: 70vw;
+}
+
+.main__Arma {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5vw;
+}
+
+.main__Fotos img {
+    height: auto;
+    width: 25vw;
+    border: 1px solid var(--cor-hover-letra);
+    box-shadow: 3px 3px 10px var(--cor-hover-letra);
+}
+
+.main__FotosHardWare img {
+    height: 30vh;
+    width: auto;
+    border: 1px solid var(--cor-hover-letra);
+    box-shadow: 3px 3px 10px var(--cor-hover-letra);
+}
+
+.main__ArmaTexto {
+    margin: 3vh 20vw;
+}
+
+.card{
+    width: 80%;
+}
+
+.card-text{
+    color: var(--cor-fundo);
+}
+
+
+/* FOOTER */
+footer{
+    background-color: var(--cor-cinza-escuro);
+}
+
+.footer__Fiap{
+    display: flex;
+    justify-content: center;
+}
+
+.footer__Fiap img{
+    height: 10vw;
+    width: auto;
+}
+
+.footer__Apps i{
+    color: var(--cor-hover-letra);
+    transition: 0.5s;
+}
+
+.rodape__titulo {
+    font-size: 18px;
+    font-family: var(--fonte-secundaria);
+}
+
+.rodape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.rodape__texto {
+    text-align: center;
+    color: var(--cinza-secundario);
+    margin: 1em 15em;
+}
+
+.voltar{
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.voltar a{
+    color: var(--cor-hover-letra);
+}
+
+.voltar h4{
+    color: var(--cor-hover-letra);
+}
+
+/* HOVER */
+
+.footer__Apps i:hover{
+    scale: 1.1;
+}
+
+/* Resposividade */
+
+@media(max-width: 1000px) {
+    .main__Titulo {
+        height: 10vh;
+    }
+
+    .main__Robo {
+        flex-wrap: wrap;
+        margin-bottom: 0;
+    }
+
+    .main__Robo img {
+        margin: 0 23vw;
+    }
+
+    .main__Equipe{
+        margin: 0;
+    }
+
+    .paragrafo  {
+        padding: 0vh 15vw;
+        margin: 2vh 0 ;
+        font-size: 0.9rem;
+    }
+
+    .letraParagrafo{
+        font-size: 2rem;
+    }
+
+    .main__Fotos img {
+        width: 40vw;
+    }
+
+    .carousel-item img{
+        overflow: hidden;
+        max-width: 100%;
+        height: 50vh;
+        margin: 0 auto;
+    }
+
+}
+
+@media(max-width: 880px) {
+
+   
+    .letraParagrafo{
+        font-size: 1.5rem;
+    }
+
+}
+
+@media(max-width: 550px) {
+
+    .letraParagrafo{
+        font-size: 1.2rem;
+    }
+
+    .cabecalho {
+        height: 40vh;
+    }
+
+    .main__Titulo{
+        margin-bottom: 2rem;
+    }
+
+    .cabecalho__Titulo{
+        font-size: 4rem;
+    }
+
+    .main__Fotos img {
+        width: 50vw;
+    }
+
+    .paragrafo{
+        font-size: 0.7rem;
+    }
+
+    .main__Robo {
+        margin-bottom: 5vw;
+    }
+
+    .main__Arma {
+        margin-bottom: 2rem;
+    }
+
+    .main__ArmaTexto {
+        font-size: 0.7rem;
+    }
+
+     .row{
+        margin-left: 3rem;
+     }
+
+     .rodape__lista{
+        align-items: center;
+        margin: 30px 0;
+     }
+}
